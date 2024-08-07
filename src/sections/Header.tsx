@@ -6,12 +6,12 @@ export const Header = () => {
   return (
     <header className="py-4 border-b border-white/15 md:border-none">
       <div className="container">
-        <div className="flex justify-between items-center border border-white/15 p-2.5 rounded-xl pr-5">
+        <div className="flex justify-between items-center md:border border-white/15 md:p-4  rounded-xl   ">
           {/* Logo */}
           <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15">
             <LogoIcon className="h-8 w-8" />
           </div>
-          <nav className="flex items-center justify-between gap-8 px-9 text-sm">
+          <nav className="md:flex items-center justify-between gap-8 px-9 text-sm sm:hidden">
             <Link
               href="#"
               className="text-gray-400 hover:text-white transition"
@@ -45,7 +45,7 @@ export const Header = () => {
           </nav>
 
           <div className="flex gap-4 items-center">
-            <button className=" relative rounded-lg py-2 px-3 font-medium text-sm bg-gradient-to-b from-slate-900 to-purple-800 shadow-[0px_0px_12px_#8c45ff] left-2">
+            <button className=" relative rounded-lg py-2 px-3 font-medium text-sm bg-gradient-to-b from-slate-900 to-purple-800 shadow-[0px_0px_12px_#8c45ff] left-2 ">
               <div className="absolute inset-0 ">
                 {/* gradient border */}
                 <div className="border rounded-lg border-white/20 absolute inset-0 [mask-image: linear-gradient(to_bottom,black,transparent)]"></div>
@@ -55,7 +55,7 @@ export const Header = () => {
 
               <span className="whitespace-nowrap">Join waitlist</span>
             </button>
-            <MenuIcon className="md:hidden" />
+            <MenuIcon className=" md:hidden" />
           </div>
         </div>
       </div>
