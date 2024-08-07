@@ -10,7 +10,6 @@ export const Header = () => {
           <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15">
             <LogoIcon className="h-8 w-8" />
           </div>
-          {/* Button */}
 
           <div className="flex gap-4 items-center">
             <button>join waitlist</button>
