@@ -56,7 +56,3 @@ export const CallToAction = () => {
     </section>
   );
 };
-/*border-4 border-red-500*/
-//border-4 border-blue-500
-//border-4 border-purple-500
-//border-4 border-yellow-500
