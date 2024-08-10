@@ -110,15 +110,3 @@ export const Hero = () => {
     </section>
   );
 };
-
-//h1 gradients testing: bg-gradient-to-br from-sky-50 via-violet-600 to-violet-900 bg-clip-text text-transparent
-
-//sphere color testing: bg-gradient-to-br from-purple-50 via-violet-900 to-stone-900
-/*<div
-className="absolute h-64 w-64 rounded-full border border-white/30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-style={{
-  background: "rgb(255,255,255)",
-  backgroundImage:
-    "linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(110,83,129,1) 19%, rgba(29,6,48,1) 35%)",
-}}
-></div> */
