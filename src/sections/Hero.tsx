@@ -1,5 +1,7 @@
+"use client";
 import Button from "@/components/Button";
 import starsBg from "@/assets/stars.png";
+import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section
@@ -28,26 +30,68 @@ export const Hero = () => {
 
       {/* Ring around the planet with flowing objects*/}
 
-      <div className="absolute h-[344px] w-[344px] md:h-[580px] md:w-[580px] border opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <motion.div
+        style={{
+          translateY: "-50%",
+          translateX: "-50%",
+        }}
+        animate={{
+          rotate: "1turn",
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 60,
+          ease: "linear",
+        }}
+        className="absolute h-[344px] w-[344px] md:h-[580px] md:w-[580px] border opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
         <div className="absolute h-2 w-2 top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"></div>
         <div className="absolute h-2 w-2 top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"></div>
         <div className="absolute h-5 w-5 top-1/2 left-full -translate-x-1/2 -translate-y-1/2 rounded-full border border-white inline-flex justify-center items-center">
           <div className="h-2 w-2 bg-white rounded-full"></div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Second ring*/}
-      <div className=" absolute h-[444px] w-[444px] md:h-[780px] md:w-[780px] border border-white/20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+      <motion.div
+        style={{
+          translateY: "-50%",
+          translateX: "-50%",
+        }}
+        animate={{
+          rotate: "-1turn",
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 60,
+          ease: "linear",
+        }}
+        className=" absolute h-[444px] w-[444px] md:h-[780px] md:w-[780px] border border-white/20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      ></motion.div>
 
       {/* Third Ring around the planet with flowing objects*/}
 
-      <div className="absolute h-[544px] w-[544px] md:h-[980px] md:w-[980px] border border-white opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <motion.div
+        style={{
+          translateY: "-50%",
+          translateX: "-50%",
+        }}
+        animate={{
+          rotate: "1turn",
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 30,
+          ease: "linear",
+        }}
+        className="absolute h-[544px] w-[544px] md:h-[980px] md:w-[980px] border border-white opacity-20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
         <div className="absolute h-2 w-2 top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"></div>
         <div className="absolute h-2 w-2 top-1.2 left-full -translate-x-1/2 -translate-y-1/2 rounded-full bg-white"></div>
         <div className="absolute h-5 w-5 top-1/2 left-full -translate-x-1/2 -translate-y-1/2 rounded-full border border-white inline-flex justify-center items-center">
           <div className="h-2 w-2 bg-white rounded-full"></div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Page content*/}
 
