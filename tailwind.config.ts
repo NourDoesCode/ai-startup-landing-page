@@ -24,7 +24,12 @@ const config: Config = {
       md: "768px",
       lg: "1200px",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "custom-radial":
+          "radial-gradient(circle, rgba(56,33,101,1) 0%, rgba(30,12,61,1) 38%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%)",
+      },
+    },
   },
   plugins: [],
 };
