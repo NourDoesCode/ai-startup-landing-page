@@ -40,7 +40,7 @@ export const Testimonials = () => {
           Beyond Expectations.
         </h3>
         <p className="text-center text-lg tracking-tight text-white/70 mt-5 md:text-xl max-w-sm mx-auto">
-          Our revolutionary AI SEO tools have transformed our clients'
+          Our revolutionary AI SEO tools have transformed our clients&#39;
           strategies.
         </p>
         <div className="flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)] ">
